@@ -1,0 +1,59 @@
+debug1: OpenSSH_10.2p1 Debian-2, OpenSSL 3.5.4 30 Sep 2025
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: Reading configuration data /etc/ssh/ssh_config.d/20-systemd-ssh-proxy.conf
+debug1: /etc/ssh/ssh_config line 21: Applying options for *
+debug1: Connecting to 172.16.19.200 [172.16.19.200] port 22.
+debug1: Connection established.
+debug1: no pubkey loaded from /home/kali/.ssh/id_rsa
+debug1: identity file /home/kali/.ssh/id_rsa type -1
+debug1: no identity pubkey loaded from /home/kali/.ssh/id_rsa
+debug1: no pubkey loaded from /home/kali/.ssh/id_ecdsa
+debug1: identity file /home/kali/.ssh/id_ecdsa type -1
+debug1: no identity pubkey loaded from /home/kali/.ssh/id_ecdsa
+debug1: no pubkey loaded from /home/kali/.ssh/id_ecdsa_sk
+debug1: identity file /home/kali/.ssh/id_ecdsa_sk type -1
+debug1: no identity pubkey loaded from /home/kali/.ssh/id_ecdsa_sk
+debug1: no pubkey loaded from /home/kali/.ssh/id_ed25519
+debug1: identity file /home/kali/.ssh/id_ed25519 type -1
+debug1: no identity pubkey loaded from /home/kali/.ssh/id_ed25519
+debug1: no pubkey loaded from /home/kali/.ssh/id_ed25519_sk
+debug1: identity file /home/kali/.ssh/id_ed25519_sk type -1
+debug1: no identity pubkey loaded from /home/kali/.ssh/id_ed25519_sk
+debug1: Local version string SSH-2.0-OpenSSH_10.2p1 Debian-2
+debug1: Remote protocol version 2.0, remote software version OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.13
+debug1: compat_banner: match: OpenSSH_6.6.1p1 Ubuntu-2ubuntu2.13 pat OpenSSH_6.6.1* compat 0x04000002
+debug1: Authenticating to 172.16.19.200:22 as 's.lane'
+debug1: load_hostkeys: fopen /home/kali/.ssh/known_hosts2: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts2: No such file or directory
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug1: kex: algorithm: curve25519-sha256@libssh.org
+debug1: kex: host key algorithm: ssh-ed25519
+debug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug1: SSH2_MSG_KEX_ECDH_REPLY received
+debug1: Server host key: ssh-ed25519 SHA256:Rpy8shmBT8uIqZeMsZCG6N5gHXDNSWQ0tEgSgF7t/SM
+debug1: load_hostkeys: fopen /home/kali/.ssh/known_hosts2: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts: No such file or directory
+debug1: load_hostkeys: fopen /etc/ssh/ssh_known_hosts2: No such file or directory
+debug1: hostkeys_find_by_key_cb: found matching key in ~/.ssh/known_hosts:1
+debug1: hostkeys_find_by_key_hostfile: hostkeys file /home/kali/.ssh/known_hosts2 does not exist
+debug1: hostkeys_find_by_key_hostfile: hostkeys file /etc/ssh/ssh_known_hosts does not exist
+debug1: hostkeys_find_by_key_hostfile: hostkeys file /etc/ssh/ssh_known_hosts2 does not exist
+The authenticity of host '172.16.19.200 (172.16.19.200)' can't be established.
+ED25519 key fingerprint is: SHA256:Rpy8shmBT8uIqZeMsZCG6N5gHXDNSWQ0tEgSgF7t/SM
+This host key is known by the following other names/addresses:
+    ~/.ssh/known_hosts:1: [hashed name]
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '172.16.19.200' (ED25519) to the list of known hosts.
+debug1: rekey out after 134217728 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug1: SSH2_MSG_NEWKEYS received
+debug1: rekey in after 134217728 blocks
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+Connection closed by 172.16.19.200 port 22
